@@ -93,7 +93,7 @@ public class BaseTest4 {
 		return driver;
 
 	}
-	 @Test
+	
 	public String getScreenshot(String testCase, WebDriver driver) {
 		logger.info("Taking ScreenShot");
 		String desPath = System.getProperty("user.dir") + "\\Test_Output\\";
