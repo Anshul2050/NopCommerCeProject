@@ -18,10 +18,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.io.FileHandler;
 
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+
+
 
 import com.nop.pageLayer4.HomePage;
 
@@ -32,7 +32,7 @@ public class BaseTest4 {
 	public HomePage hp_obj;
 	public static Logger logger;
      
-	@BeforeTest
+//	@BeforeTest
 	public void start() {
 
 		logger = Logger.getLogger("Nop Commer Test Report");
@@ -41,7 +41,7 @@ public class BaseTest4 {
 
 	}
     
-	@AfterTest
+//	@AfterTest
 	public void finish() {
 
 		logger.info("Test Execution stopped");
