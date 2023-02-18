@@ -21,6 +21,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import com.nop.pageLayer4.HomePage;
 
@@ -92,7 +93,7 @@ public class BaseTest4 {
 		return driver;
 
 	}
-
+	 @Test
 	public String getScreenshot(String testCase, WebDriver driver) {
 		logger.info("Taking ScreenShot");
 		String desPath = System.getProperty("user.dir") + "\\Test_Output\\";
