@@ -32,7 +32,7 @@ public class BaseTest4 {
 	public HomePage hp_obj;
 	public static Logger logger;
      
-	@BeforeTest
+//	@BeforeTest
 	public void start() {
 
 		logger = Logger.getLogger("Nop Commer Test Report");
@@ -41,7 +41,7 @@ public class BaseTest4 {
 
 	}
     
-	@AfterTest
+//	@AfterTest
 	public void finish() {
 
 		logger.info("Test Execution stopped");
