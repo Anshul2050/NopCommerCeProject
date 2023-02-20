@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.nop.baseTest4.BaseTest4"/>
-      <class name="com.nop.testLayer.CheckTest"/>
+      <class name="com.nop.testLayer.RegisterPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
