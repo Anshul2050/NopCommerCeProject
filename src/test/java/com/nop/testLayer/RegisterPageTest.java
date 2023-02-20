@@ -13,7 +13,25 @@ public class RegisterPageTest extends BaseTest4 {
 		uc.goToRegiterPage();
 		System.out.println(uc.jsGetTitle());
 		
-		rp_obj.input_user_basic_details("tinku", "dubey","10", "July", "1992", "tinku@gmail.com");
+		rp_obj.input_user_basic_details("tinku", "dubey","10", "July", "1992", "tinkubadyan@gmail.com");
+		rp_obj.company("infosys");
+		rp_obj.password("12345678");
+		rp_obj.confm_password("12345678");
+		rp_obj.clickOnRegBttn();
+		
+		
+		
+		
+		
+	}
+	
+	@Test
+	public void registerWithValidPwd2(){
+		
+		uc.goToRegiterPage();
+		System.out.println(uc.jsGetTitle());
+		
+		rp_obj.input_user_basic_details("tinku", "dubey","10", "July", "1992", "tinkubadgaiyyan@gmail.com");
 		rp_obj.company("infosys");
 		rp_obj.password("12345678");
 		rp_obj.confm_password("12345678");
