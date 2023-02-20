@@ -16,14 +16,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.io.FileHandler;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-
 import com.nop.pageLayer4.HomePage;
+import com.nop.pageLayer4.RegisterPage;
+import com.nop.utilities4.UtilClass4;
 
 public class BaseTest4 {
 
@@ -31,6 +31,8 @@ public class BaseTest4 {
 	public Properties prop;
 	public HomePage hp_obj;
 	public static Logger logger;
+	public UtilClass4 uc;
+	public RegisterPage rp_obj;
      
 	@BeforeTest
 	public void start() {
@@ -88,6 +90,8 @@ public class BaseTest4 {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		 uc = new UtilClass4(driver);
+		 rp_obj = new RegisterPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		logger.info("Browser Opened");
 		return driver;
