@@ -1,8 +1,18 @@
 package com.nop.utilities4;
 
+
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
+
 import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -10,11 +20,12 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.nop.baseTest4.BaseTest4;
 
-public class ListenerSetup extends BaseTest4 implements ITestListener {
 
+public class ListenerSetup extends BaseTest4 implements ITestListener {
+	public 	String messageBody;
 	ExtentReports extent = ExtentReport4.getExtentReport();
 	ExtentTest test ;
-	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread safe
+		ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread safe
 	
 	
 	
