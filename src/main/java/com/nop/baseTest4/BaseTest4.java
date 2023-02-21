@@ -21,7 +21,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import com.nop.pageLayer4.BuyDesktopsPage;
 import com.nop.pageLayer4.HomePage;
+import com.nop.pageLayer4.LoginPage;
 import com.nop.pageLayer4.RegisterPage;
 import com.nop.utilities4.UtilClass4;
 
@@ -33,6 +35,8 @@ public class BaseTest4 {
 	public static Logger logger;
 	public UtilClass4 uc;
 	public RegisterPage rp_obj;
+	public LoginPage login_obj;
+	public BuyDesktopsPage bdp_obj;
      
 	@BeforeTest
 	public void start() {
@@ -90,8 +94,10 @@ public class BaseTest4 {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+	     login_obj = new LoginPage(driver);
 		 uc = new UtilClass4(driver);
 		 rp_obj = new RegisterPage(driver);
+		  bdp_obj= new BuyDesktopsPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		logger.info("Browser Opened");
 		return driver;

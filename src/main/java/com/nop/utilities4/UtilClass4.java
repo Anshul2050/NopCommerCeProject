@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
 
@@ -107,6 +108,11 @@ public class UtilClass4 extends BaseTest4  {
 	    	
 	 }
 	 
+	 public void action_moveToElement(WebElement element) {
+		 
+		 Actions a = new Actions(driver);
+		 a.moveToElement(element).build().perform();
+		 }
 	 
 	 
 	

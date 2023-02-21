@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nop.testLayer.RegisterPageTest">
+      <class name="com.nop.testLayer.BuyProductFunctionalityTest">
         <methods>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="finish"/>
+          <include name="buyDeskTop"/>
           <include name="start"/>
-          <include name="registerWithValidPwd"/>
+          <include name="finish"/>
         </methods>
-      </class> <!-- com.nop.testLayer.RegisterPageTest -->
+      </class> <!-- com.nop.testLayer.BuyProductFunctionalityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
