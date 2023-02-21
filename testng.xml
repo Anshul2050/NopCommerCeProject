@@ -9,6 +9,9 @@
     <classes>
       <class name="com.nop.baseTest4.BaseTest4"/>
       <class name="com.nop.testLayer.RegisterPageTest"/>
+      <class name="com.nop.testLayer.BuyProductFunctionalityTest"/>
+      <class name="com.nop.testLayer.LoginFunctionalityTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
