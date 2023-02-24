@@ -19,6 +19,16 @@ public class LoginFunctionalityTest extends BaseTest4 {
     	
     }
 	
+    @Test
+    public void checkTest2() throws InterruptedException
+    {
+       uc.goToLoginPage();
+       login_obj.login_Email("tinkubadyan@gmail.com");
+       login_obj.login_pwd("123");
+       login_obj.click_remember_chck_Box();
+       login_obj.click_login_btn();
+    	
+    }
 	
 
 }

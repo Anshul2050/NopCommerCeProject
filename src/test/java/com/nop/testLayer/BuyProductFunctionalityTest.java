@@ -17,7 +17,7 @@ public class BuyProductFunctionalityTest extends BaseTest4 {
 		
 		
 		bdp_obj.hoverToComputers_dd();
-		Thread.sleep(2000);
+		
 		bdp_obj.click_on_Desktops();
 		
 	}
