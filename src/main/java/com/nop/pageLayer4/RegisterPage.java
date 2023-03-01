@@ -20,12 +20,16 @@ public class RegisterPage extends UtilClass4 {
 
 	@FindBy(id = "gender-male")
 	WebElement radio_Male;
-
+	
 	@FindBy(id = "gender-female")
 	WebElement radio_Female;
 
 	@FindBy(id = "FirstName")
 	WebElement fn;
+	
+
+	@FindBy(css = ".page-body .result")
+	WebElement sucessMessage;
 
 	@FindBy(id = "LastName")
 	WebElement ln;
@@ -93,6 +97,10 @@ public class RegisterPage extends UtilClass4 {
 	
 	public void clickOnRegBttn(){
 		reg_btn.click();
+	}
+	
+	public String getSuccessMessage(){
+		return sucessMessage.getText();
 	}
 
    
