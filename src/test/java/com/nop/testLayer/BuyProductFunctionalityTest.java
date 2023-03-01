@@ -8,9 +8,6 @@ import com.nop.baseTest4.BaseTest4;
 public class BuyProductFunctionalityTest extends BaseTest4 {
 	
 	
-	
-	
-	
 	@Test
 	public void buyDeskTop() throws InterruptedException {
 		uc.goToLoginPage();

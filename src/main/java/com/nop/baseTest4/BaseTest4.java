@@ -135,7 +135,7 @@ public class BaseTest4 {
 	@AfterMethod
 	public void tearDown() {
 		logger.info("Quiting the browser");
-//		driver.quit();
+		driver.quit();
 		;
 	}
 }

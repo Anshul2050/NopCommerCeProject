@@ -7,7 +7,7 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.nop.baseTest4.BaseTest4"/>
+      
       <class name="com.nop.testLayer.RegisterPageTest"/>
       <class name="com.nop.testLayer.BuyProductFunctionalityTest"/>
       <class name="com.nop.testLayer.LoginFunctionalityTest"/>

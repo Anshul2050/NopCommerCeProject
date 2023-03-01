@@ -1,33 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="11" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-27T15:14:24 IST" name="Default suite" finished-at="2023-02-27T15:14:47 IST" duration-ms="23774">
+  <suite started-at="2023-03-01T16:05:29 IST" name="Suite" finished-at="2023-03-01T16:08:20 IST" duration-ms="171120">
     <groups>
     </groups>
-    <test started-at="2023-02-27T15:14:24 IST" name="Default test" finished-at="2023-02-27T15:14:47 IST" duration-ms="23774">
-      <class name="com.nop.testLayer.RegisterPageTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.nop.testLayer.RegisterPageTest@459e9125]" started-at="2023-02-27T15:14:24 IST" name="start" finished-at="2023-02-27T15:14:24 IST" duration-ms="243" status="PASS">
+    <test started-at="2023-03-01T16:05:29 IST" name="Test" finished-at="2023-03-01T16:08:20 IST" duration-ms="171120">
+      <class name="com.nop.baseTest4.BaseTest4">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.nop.baseTest4.BaseTest4@7dc3712]" started-at="2023-03-01T16:05:29 IST" name="start" finished-at="2023-03-01T16:05:30 IST" duration-ms="702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nop.testLayer.RegisterPageTest@459e9125]" started-at="2023-02-27T15:14:24 IST" name="launchApplication" finished-at="2023-02-27T15:14:36 IST" duration-ms="12223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="registerWithValidPwd()[pri:0, instance:com.nop.testLayer.RegisterPageTest@459e9125]" started-at="2023-02-27T15:14:36 IST" name="registerWithValidPwd" finished-at="2023-02-27T15:14:47 IST" duration-ms="11212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithValidPwd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nop.testLayer.RegisterPageTest@459e9125]" started-at="2023-02-27T15:14:47 IST" name="tearDown" finished-at="2023-02-27T15:14:47 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:com.nop.testLayer.RegisterPageTest@459e9125]" started-at="2023-02-27T15:14:47 IST" name="finish" finished-at="2023-02-27T15:14:47 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:com.nop.baseTest4.BaseTest4@7dc3712]" started-at="2023-03-01T16:08:20 IST" name="finish" finished-at="2023-03-01T16:08:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
+      </class> <!-- com.nop.baseTest4.BaseTest4 -->
+      <class name="com.nop.testLayer.RegisterPageTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nop.testLayer.RegisterPageTest@10289886]" started-at="2023-03-01T16:05:30 IST" name="launchApplication" finished-at="2023-03-01T16:06:07 IST" duration-ms="36588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="registerWithValidPwd()[pri:0, instance:com.nop.testLayer.RegisterPageTest@10289886]" started-at="2023-03-01T16:06:07 IST" name="registerWithValidPwd" finished-at="2023-03-01T16:06:21 IST" duration-ms="14482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithValidPwd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nop.testLayer.RegisterPageTest@10289886]" started-at="2023-03-01T16:06:21 IST" name="tearDown" finished-at="2023-03-01T16:06:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nop.testLayer.RegisterPageTest@10289886]" started-at="2023-03-01T16:06:21 IST" name="launchApplication" finished-at="2023-03-01T16:06:36 IST" duration-ms="14872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="registerWithValidPwd2()[pri:0, instance:com.nop.testLayer.RegisterPageTest@10289886]" started-at="2023-03-01T16:06:36 IST" name="registerWithValidPwd2" finished-at="2023-03-01T16:06:41 IST" duration-ms="5070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithValidPwd2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nop.testLayer.RegisterPageTest@10289886]" started-at="2023-03-01T16:06:41 IST" name="tearDown" finished-at="2023-03-01T16:06:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.nop.testLayer.RegisterPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.nop.testLayer.LoginFunctionalityTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nop.testLayer.LoginFunctionalityTest@461ad730]" started-at="2023-03-01T16:07:11 IST" name="launchApplication" finished-at="2023-03-01T16:07:28 IST" duration-ms="17383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="checkTest(java.lang.String,java.lang.String)[pri:0, instance:com.nop.testLayer.LoginFunctionalityTest@461ad730]" started-at="2023-03-01T16:07:28 IST" name="checkTest" data-provider="dp" finished-at="2023-03-01T16:07:35 IST" duration-ms="7167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tinku@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nop.testLayer.LoginFunctionalityTest@461ad730]" started-at="2023-03-01T16:07:35 IST" name="tearDown" finished-at="2023-03-01T16:07:35 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nop.testLayer.LoginFunctionalityTest@461ad730]" started-at="2023-03-01T16:07:35 IST" name="launchApplication" finished-at="2023-03-01T16:08:17 IST" duration-ms="41333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="checkTest(java.lang.String,java.lang.String)[pri:0, instance:com.nop.testLayer.LoginFunctionalityTest@461ad730]" started-at="2023-03-01T16:08:17 IST" name="checkTest" data-provider="dp" finished-at="2023-03-01T16:08:20 IST" duration-ms="3739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[badgaiyan@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4567891]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nop.testLayer.LoginFunctionalityTest@461ad730]" started-at="2023-03-01T16:08:20 IST" name="tearDown" finished-at="2023-03-01T16:08:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nop.testLayer.LoginFunctionalityTest -->
+      <class name="com.nop.testLayer.BuyProductFunctionalityTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nop.testLayer.BuyProductFunctionalityTest@5c86dbc5]" started-at="2023-03-01T16:06:41 IST" name="launchApplication" finished-at="2023-03-01T16:06:57 IST" duration-ms="15974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="buyDeskTop()[pri:0, instance:com.nop.testLayer.BuyProductFunctionalityTest@5c86dbc5]" started-at="2023-03-01T16:06:57 IST" name="buyDeskTop" finished-at="2023-03-01T16:07:10 IST" duration-ms="13097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyDeskTop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nop.testLayer.BuyProductFunctionalityTest@5c86dbc5]" started-at="2023-03-01T16:07:10 IST" name="tearDown" finished-at="2023-03-01T16:07:10 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nop.testLayer.BuyProductFunctionalityTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
