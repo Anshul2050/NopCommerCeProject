@@ -21,6 +21,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import com.nop.pageLayer4.AllFooterLinks;
 import com.nop.pageLayer4.BuyDesktopsPage;
 import com.nop.pageLayer4.HomePage;
 import com.nop.pageLayer4.LoginPage;
@@ -37,6 +38,7 @@ public class BaseTest4 {
 	public RegisterPage rp_obj;
 	public LoginPage login_obj;
 	public BuyDesktopsPage bdp_obj;
+	public AllFooterLinks links_obj;
      
 	@BeforeTest
 	public void start() {
@@ -58,11 +60,17 @@ public class BaseTest4 {
 		
 		String configPath = System.getProperty("user.dir") + "\\src\\test\\resources\\configs\\config.properties";
 		String browserName = null;
+		
+		
 		try {
 			FileInputStream fis = new FileInputStream(configPath);
 			prop = new Properties();
 			prop.load(fis);
-			browserName = prop.getProperty("browser");
+			if(System.getProperty("browser")!=null) {
+				
+				browserName = System.getProperty("browser");
+			}
+			else browserName = prop.getProperty("browser");
 
 		} catch (Exception e) {
 
@@ -98,6 +106,7 @@ public class BaseTest4 {
 		 uc = new UtilClass4(driver);
 		 rp_obj = new RegisterPage(driver);
 		  bdp_obj= new BuyDesktopsPage(driver);
+		  links_obj = new AllFooterLinks(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		logger.info("Browser Opened");
 		return driver;
