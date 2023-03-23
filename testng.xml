@@ -10,6 +10,9 @@
       
    
       <class name="com.nop.testLayer.BuyProductFunctionalityTest"/>
+       <class name="com.nop.testLayer.BrokenLinkTest"/>
+        <class name="com.nop.testLayer.LoginFunctionalityTest"/>
+        
       
       
     </classes>
