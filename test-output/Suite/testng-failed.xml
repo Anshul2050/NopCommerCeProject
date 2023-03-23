@@ -6,13 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nop.testLayer.CheckTest">
+      <class name="com.nop.testLayer.BuyProductFunctionalityTest">
         <methods>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="checkTest"/>
+          <include name="buyDeskTop"/>
+          <include name="finish"/>
+          <include name="start"/>
         </methods>
-      </class> <!-- com.nop.testLayer.CheckTest -->
+      </class> <!-- com.nop.testLayer.BuyProductFunctionalityTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
