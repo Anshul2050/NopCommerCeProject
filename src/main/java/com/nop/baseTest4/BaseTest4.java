@@ -45,7 +45,7 @@ public class BaseTest4 {
 	public void start() {
 
 		logger = Logger.getLogger("Nop Commer Test Report");
-		PropertyConfigurator.configure("Log4jfile.properties");
+		PropertyConfigurator.configure("\\src\\test\\resources\\logsFile\\Log4jfile.properties");
 		logger.info("Test Execution Started");
 
 	}
