@@ -28,13 +28,6 @@ public class BrokenLinkTest extends BaseTest4 {
 		a.assertAll();
 	}
 
-	@Test
-	public void test2()
-	{
-		
-		Assert.assertFalse(driver.findElement(By.xpath("gh")).isEnabled());
-		
-		
-	}
+	
 	
 }
