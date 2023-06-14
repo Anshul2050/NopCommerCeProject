@@ -2,6 +2,7 @@ package com.nop.testLayer;
 
 import java.util.ArrayList;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -31,7 +32,7 @@ public class BrokenLinkTest extends BaseTest4 {
 	public void test2()
 	{
 		
-		Assert.assertTrue(true);
+		Assert.assertFalse(driver.findElement(By.xpath("gh")).isEnabled());
 		
 		
 	}
